@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<style>
+    form{
+        margin:auto;
+        width: 50%;
+        border: 1px solid blue;
+        padding: 20px;
+    }
+</style>
+
+<html>
+<body>
+    <form action="authenticate.php">
+        <input type="text" id="ucid" name="ucid">UCID<br>
+        <input type="password" id ="pass" name="pass">Password<br>
+        <input type="checkbox" onclick="toggled()"> Show/Hide Password<br>
+        <input type="submit" value="Authenticate"><br>
+    </form>
+
+</body>
+
+</html>
+
+
+
+<script>
+    function toggled() {
+        var pass = document.getElementById("pass");
+        if (pass.type === "text") {
+            pass.type = "password";
+        } else {
+            pass.type = "text";
+        }
+    }
+</script>
+
