@@ -6,5 +6,5 @@
 		$hostname  = "sql2.njit.edu"     ;
 		$username = "sf339" ;
 		$project = "sf339" ;
-		$password = "Cappy12345!"
+		$password = "Secret!!!"
 ?>
